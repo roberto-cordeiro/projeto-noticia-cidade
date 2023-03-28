@@ -1,0 +1,253 @@
+/* Zerando as margens e parágrafos */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/****************************************************/
+
+/* Inicio da Configuração BODY, CONTAINER, CABEÇALHO, H1, H2, H3 e P */
+body {
+    background: #fff url(../imagens/fundo.png) repeat-x ;
+    font-family: 'Trebuchet MS',Helvetica, sans-serif;
+}
+#container {
+    width: 750px;
+    margin:0px auto;
+}
+#topo {
+    height: 150px;
+    background: url(../imagens/detalhe-topo.png)no-repeat right top;
+    padding-top: 25px;
+    /*border: 1px solid red;*/
+}
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+h2 {
+    font-size: 1em;
+    background: #294C71;
+    color: #fff;
+    padding: 5px;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 3px;
+    display: inline;
+}
+.destaque h3 {   
+    background-color: #b10333;
+    color: #fff;
+}
+.entrevista h3 {
+    background-color: #de003e;
+}
+/* Fim da Configuração BODY, CONTAINER e CABEÇALHO, H1, H2, H3 e P  */
+
+/************************************************/
+
+/* Inicio da Formatação do MENU DE NAVEGAÇÃO DO TOPO */
+ul{ /***Configuração universal para UL***/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#topo ul {
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+#topo ul li {   
+    float: left;  
+}
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    color: #fff;
+    background: url(../imagens/divisor.png) no-repeat left center;
+}
+#topo ul .primeiro a {
+    background: #b10333;
+}
+#topo ul a:hover {
+    color: #5b001a;
+}
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+    background: #de003e;  
+    color: #fff;  
+    cursor: text;
+}
+/* Fim da Formatação do MENU DE NAVEGAÇÃO DO TOPO */
+
+/************************************************/
+
+/* Inicio da formatação da CAIXA */
+.caixa {
+    padding: 5px;
+    margin: 10px 0;
+    background: #e8e7e7 url(../imagens/fundo-caixa.png);   
+}
+/* Fim da formatação da CAIXA */
+
+/************************************************/
+
+/* Inicio da formatação da CAIXA-CONTEÚDO */
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+/* Fim da formatação da CAIXA-CONTEÚDO */
+
+/************************************************/
+
+/* Inicio da formatação das COLUNAS DE CONTEÚDO */
+#conteudo {
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+#primario {
+    width: 270px;
+    margin: 0 0 20px 195px;
+    float: left;
+}
+#secundario {
+    width: 270px;
+    margin: 0 0 20px 15px;
+    float: left;
+}
+#lateral {
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+}
+/* Fim da formatação das COLUNAS DE CONTEÚDO */
+
+/************************************************/
+
+/* Inicio da formatação das COLUNAS do conteúdo PRINCIPAL */
+#uma-coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0px;
+    float: left;
+}
+#duas-colunas #primario {
+    width: 555px;
+    margin: 0 0 20px 195px;
+    float: left
+}
+/* Fim da formatação das COLUNAS do conteúdo PRINCIPAL */
+
+/************************************************/
+
+/* Inicio da formatação do conteudo LATERAL */
+#lateral ul a {
+    font-size: 0.9em; 
+    padding: 3px; 
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #e1e0e0;  
+}
+#lateral ul a:hover {
+    padding-left: 20px;
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    color: #8e8e8e;
+}
+label {
+    display: block;
+    cursor: pointer;
+}
+input {
+    width: 125px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+/* Fim da formatação do conteudo LATERAL */
+/************************************************/
+
+/* Inicio da formatação do conteudo PRINCIPAL */
+
+/* Fim da formatação do conteudo PRINCIPAL */
+
+/************************************************/
+
+/* Inicio da formatação do conteúdo SECUNDÁRIO */
+/* Fim da formatação do conteúdo SECUNDÁRIO */
+
+/************************************************/
+
+/* Inicio da formatação da LISTA DE NOTÍCIAS */
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+    
+}
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+#lista-noticias li a {
+    text-decoration: none;
+}
+#lista-noticias li a h3{
+    color: rgb(0, 149, 255);
+    font-size: 0.6em;
+    padding: 0; 
+}
+#lista-noticias li a p{
+    color: #000;
+    font-size: 0.7em;
+}
+#lista-noticias li:hover{
+    background: rgb(223, 221, 221);
+    cursor: pointer;
+}
+
+/* Fim da formatação da LISTA DE NOTÍCIAS */
+
+/* Inicio da formatação de IMAGENS */
+/*img {
+    border: 2px solid #bfbfbf;
+}*/
+img.imagem-principal {
+    width: 98%;    
+    border: 3px solid #bfbfbf;
+}
+/* Fim Inicio da formatação de IMAGENS */
+
+/************************************************/
+
+/* Inicio da formatação do RODAPÉ */
+#container-rodape{
+    clear: both;
+    text-align: center;
+    background:#294C71;
+    padding: 20px;
+}
+#rodape {
+    color: #fff;
+    margin: 0 auto;
+    width: 750px;
+}
+/* Fim da formatação do RODAPÉ */
